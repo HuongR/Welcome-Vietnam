@@ -1,0 +1,136 @@
+.food-culture-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.section-block {
+  display: flex;
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
+}
+
+.section-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.image-half {
+  flex: 7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #ffffff; */
+}
+
+.intro-half {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.intro-half.vanhoa {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  /* background-color: #ccc; */
+}
+
+.intro-half.amthuc {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-end;
+  align-items: flex-start;
+  margin-top: 2rem;
+  margin-left: 7%;
+  /* background-color: #ccc; */
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 800px;
+}
+
+.square,
+.triangle {
+  width: 250px;
+  height: 250px;
+  /* background-color: #ddd; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.transparent {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+}
+
+.triangle {
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  background-color: #ccc;
+}
+
+.intro-half h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.intro-half p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 400px;
+  text-align: left;
+}
+
+.square img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px; /* Bo góc nhẹ, ví dụ 12px */
+}
+
+.square img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.intro-half.vanhoa.animate {
+  animation: slideInRight 1s ease forwards;
+}
+
+.intro-half.amthuc.animate {
+  animation: slideInLeft 1s ease forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
