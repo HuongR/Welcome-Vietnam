@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "../header/Header";
+import Header from "../../../components/layout/Header";
 import VideoBackground from "./VideoBackground";
 import SearchBox from "./SearchBox";
-import ProvinceSection from "./ProvinceSection";
+import ProvinceSection from "../province/ProvinceSection";
 import FoodCulture from "./FoodCulture";
 import Customs from "./Customs";
-import Footer from "../footer/Footer";
+import Footer from "../../../components/layout/Footer";
 import VietnamMap from "./VietnamMap";
 
 function Home() {

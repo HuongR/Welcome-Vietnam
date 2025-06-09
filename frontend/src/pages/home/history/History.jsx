@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import Header from "../header/Header";
-import Footer from "../footer/Footer";
+import Header from "../../../components/layout/Header";
+import Footer from "../../../components/layout/Footer";
 
 const historyData = [
   {

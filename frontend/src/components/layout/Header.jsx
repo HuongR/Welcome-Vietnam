@@ -7,7 +7,7 @@ import {
   FaCog,
   FaSignOutAlt,
 } from "react-icons/fa";
-import logoVietnam from "../../../assets/images/logo-vietnam.png";
+import logoVietnam from "../../assets/images/logo-vietnam.png";
 
 function Header() {
   const location = useLocation();
@@ -81,14 +81,14 @@ function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full bg-white border-b z-50 transition-all duration-500
+      className={`fixed top-0 left-0 w-full bg-white z-50 transition-all duration-500
         ${
           show
             ? "opacity-100 translate-y-0 pointer-events-auto"
             : "opacity-0 -translate-y-16 pointer-events-none"
         }
         animate-header-fade`}
-      style={{ willChange: "transform, opacity", height: "4.5rem" }}
+      style={{ willChange: "transform, opacity", height: "4.5rem" }} // Xóa border-b
     >
       <div className="w-full flex items-center justify-between h-full px-8 max-w-none">
         <div

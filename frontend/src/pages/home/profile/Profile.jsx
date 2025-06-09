@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import Header from "../header/Header";
+import Header from "../../../components/layout/Header";
 import Post from "./Post";
 import Information from "./Information";
 import Images from "./Images";

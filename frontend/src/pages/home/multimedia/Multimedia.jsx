@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import Header from "../header/Header";
+import Header from "../../../components/layout/Header";
 import {
   FaRegThumbsUp,
   FaRegCommentDots,
@@ -124,12 +124,36 @@ const initialPosts = [
 ];
 
 const emojiList = [
-  { key: "like", icon: <FaRegThumbsUp className="text-blue-600" />, label: "Thích" },
-  { key: "love", icon: <FaRegHeart className="text-red-500" />, label: "Yêu thích" },
-  { key: "haha", icon: <FaRegLaughSquint className="text-yellow-400" />, label: "Haha" },
-  { key: "wow", icon: <FaRegSurprise className="text-yellow-400" />, label: "Wow" },
-  { key: "sad", icon: <FaRegSadTear className="text-blue-400" />, label: "Buồn" },
-  { key: "angry", icon: <FaRegAngry className="text-orange-600" />, label: "Phẫn nộ" },
+  {
+    key: "like",
+    icon: <FaRegThumbsUp className="text-blue-600" />,
+    label: "Thích",
+  },
+  {
+    key: "love",
+    icon: <FaRegHeart className="text-red-500" />,
+    label: "Yêu thích",
+  },
+  {
+    key: "haha",
+    icon: <FaRegLaughSquint className="text-yellow-400" />,
+    label: "Haha",
+  },
+  {
+    key: "wow",
+    icon: <FaRegSurprise className="text-yellow-400" />,
+    label: "Wow",
+  },
+  {
+    key: "sad",
+    icon: <FaRegSadTear className="text-blue-400" />,
+    label: "Buồn",
+  },
+  {
+    key: "angry",
+    icon: <FaRegAngry className="text-orange-600" />,
+    label: "Phẫn nộ",
+  },
 ];
 
 const commentEmojiList = [...emojiList];
@@ -383,7 +407,9 @@ const Multimedia = () => {
         }}
       >
         <div
-          className={`flex items-start gap-2 w-full ${isChild ? "" : "bg-[#f5f6fa]"}`}
+          className={`flex items-start gap-2 w-full ${
+            isChild ? "" : "bg-[#f5f6fa]"
+          }`}
           style={{
             borderRadius: 8,
             marginBottom: 2,
@@ -556,7 +582,12 @@ const Multimedia = () => {
           )}
           <div className="flex items-center gap-2 mt-2">
             <label className="cursor-pointer flex items-center gap-1 px-3 py-1 rounded-lg bg-[#e4e6eb] hover:bg-[#d8dadf] text-sm font-medium">
-              <svg width="20" height="20" fill="currentColor" className="text-green-600">
+              <svg
+                width="20"
+                height="20"
+                fill="currentColor"
+                className="text-green-600"
+              >
                 <path d="M4 3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H4zm0 2h12v10H4V5zm2 2v2h2V7H6zm4 0v2h2V7h-2z" />
               </svg>
               Ảnh/Video
@@ -581,7 +612,10 @@ const Multimedia = () => {
         <div className="flex flex-col gap-6">
           {posts.map((post) => {
             const usedEmojis = getSortedUsedEmojis(post.reactions, emojiList);
-            const totalReactions = Object.values(post.reactions).reduce((a, b) => a + b, 0);
+            const totalReactions = Object.values(post.reactions).reduce(
+              (a, b) => a + b,
+              0
+            );
             return (
               <div
                 key={post.id}
@@ -740,7 +774,8 @@ const Multimedia = () => {
                             alert("Đã sao chép liên kết!");
                           }}
                         >
-                          <BsLink45Deg className="text-gray-700" /> Sao chép liên kết
+                          <BsLink45Deg className="text-gray-700" /> Sao chép
+                          liên kết
                         </button>
                       </div>
                     )}
@@ -834,7 +869,10 @@ const Multimedia = () => {
                             htmlFor={`comment-media-${post.id}`}
                             className="cursor-pointer px-2 py-1 rounded-full hover:bg-gray-200"
                           >
-                            <FaRegImage className="text-lg" title="Gửi ảnh/file" />
+                            <FaRegImage
+                              className="text-lg"
+                              title="Gửi ảnh/file"
+                            />
                           </label>
                           <button
                             type="button"
