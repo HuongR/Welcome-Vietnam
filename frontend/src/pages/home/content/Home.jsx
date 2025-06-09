@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "../../../components/layout/Header";
-import VideoBackground from "./VideoBackground";
-import SearchBox from "./SearchBox";
+import VideoBackground from "../../../components/ui/VideoBackground";
+import SearchBox from "../../../components/ui/SearchBox";
 import ProvinceSection from "../province/ProvinceSection";
-import FoodCulture from "./FoodCulture";
-import Customs from "./Customs";
+import FoodCulture from "../foodculture/FoodCulture";
+import Customs from "../customfestival/CustomFestival";
 import Footer from "../../../components/layout/Footer";
 import VietnamMap from "./VietnamMap";
 
