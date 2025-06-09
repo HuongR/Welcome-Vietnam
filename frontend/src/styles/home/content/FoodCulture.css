@@ -134,3 +134,18 @@
     transform: translateX(0);
   }
 }
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.square {
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.transparent {
+  opacity: 0;
+}
