@@ -6,6 +6,7 @@ import Multimedia from "../pages/home/multimedia/Multimedia";
 import Profile from "../pages/home/profile/Profile";
 import Login, { SignIn, Register } from "../components/ui/Login";
 import Setting from "../components/ui/Setting";
+import Province from "../pages/home/province/Province";
 
 function AppRoutes() {
   return (
@@ -19,6 +20,7 @@ function AppRoutes() {
         <Route path="/login-signin" element={<SignIn />} />
         <Route path="/login-register" element={<Register />} />
         <Route path="/settings" element={<Setting />} />
+        <Route path="/province" element={<Province />} />
       </Routes>
     </Router>
   );

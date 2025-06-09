@@ -9,5 +9,5 @@ export default defineConfig({
     darkMode: 'class',
   theme: {
     extend: {}
-  },
+  }
 })
