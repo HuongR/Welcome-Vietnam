@@ -1,7 +1,13 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
+
 export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
+  assetsInclude: ['**/*.js', '**/*.svg', '**/*.png'],
+    darkMode: 'class',
+  theme: {
+    extend: {}
+  },
 })

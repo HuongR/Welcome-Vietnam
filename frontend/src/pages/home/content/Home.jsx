@@ -6,6 +6,7 @@ import ProvinceSection from "./ProvinceSection";
 import FoodCulture from "./FoodCulture";
 import Customs from "./Customs";
 import Footer from "../footer/Footer";
+import VietnamMap from "./VietnamMap";
 
 function Home() {
   return (
@@ -27,6 +28,10 @@ function Home() {
       {/* Các Section chính với id */}
       <section id="province">
         <ProvinceSection />
+      </section>
+
+      <section id="VietnamMap">
+        <VietnamMap />
       </section>
 
       <section id="food-culture">

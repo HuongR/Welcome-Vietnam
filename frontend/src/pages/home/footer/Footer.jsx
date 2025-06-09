@@ -1,52 +1,74 @@
-import React from 'react';
-import { FaFacebookF, FaYoutube, FaInstagram } from 'react-icons/fa';
+import React from "react";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaXTwitter,
+  FaGithub,
+  FaYoutube,
+} from "react-icons/fa6";
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="w-full bg-gray-900 text-white px-6 py-10">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Cột 1: Logo & mô tả */}
-        <div>
-          <h2 className="text-2xl font-bold mb-2">Vietnam Explore</h2>
-          <p className="text-gray-400">
-            Hành trình khám phá văn hóa, thiên nhiên và con người Việt Nam – từ di sản đến hiện đại.
+    <footer className="bg-[#0f172a] text-white py-12 px-6 md:px-16">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+        {/* Logo + slogan + social */}
+        <div className="md:col-span-2">
+          <div className="flex items-center gap-2 mb-4">
+            <span className="text-red-500 text-3xl">Vietnam</span>
+          </div>
+          <p className="text-sm text-gray-400 mb-6">
+            Kết nối quá khứ – Kiến tạo tương lai
           </p>
+          <div className="flex gap-4 text-gray-400 text-xl">
+            <FaFacebookF className="hover:text-white cursor-pointer" />
+            <FaInstagram className="hover:text-white cursor-pointer" />
+            <FaXTwitter className="hover:text-white cursor-pointer" />
+            <FaGithub className="hover:text-white cursor-pointer" />
+            <FaYoutube className="hover:text-white cursor-pointer" />
+          </div>
         </div>
 
-        {/* Cột 2: Liên kết nhanh */}
+        {/* Columns */}
         <div>
-          <h3 className="text-lg font-semibold mb-2">Liên kết</h3>
-          <ul className="space-y-1 text-gray-300">
-            <li><a href="/about" className="hover:text-white">Về chúng tôi</a></li>
-            <li><a href="/contact" className="hover:text-white">Liên hệ</a></li>
-            <li><a href="/privacy" className="hover:text-white">Chính sách bảo mật</a></li>
-            <li><a href="/faq" className="hover:text-white">Câu hỏi thường gặp</a></li>
+          <h4 className="text-white font-semibold mb-3">Giải pháp</h4>
+          <ul className="text-gray-400 text-sm space-y-2">
+            <li>Tiếp thị</li>
+            <li>Phân tích dữ liệu</li>
+            <li>Tự động hóa</li>
+            <li>Thương mại điện tử</li>
+            <li>Thông tin chi tiết</li>
           </ul>
         </div>
-
-        {/* Cột 3: Mạng xã hội */}
         <div>
-          <h3 className="text-lg font-semibold mb-2">Kết nối với chúng tôi</h3>
-          <div className="flex space-x-4 text-gray-300 text-xl">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-              <FaFacebookF />
-            </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-              <FaYoutube />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-              <FaInstagram />
-            </a>
-          </div>
+          <h4 className="text-white font-semibold mb-3">Hỗ trợ</h4>
+          <ul className="text-gray-400 text-sm space-y-2">
+            <li>Gửi yêu cầu</li>
+            <li>Tài liệu hướng dẫn</li>
+            <li>Hướng dẫn sử dụng</li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="text-white font-semibold mb-3">Về chúng tôi</h4>
+          <ul className="text-gray-400 text-sm space-y-2">
+            <li>Giới thiệu</li>
+            <li>Blog</li>
+            <li>Tuyển dụng</li>
+            <li>Truyền thông</li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="text-white font-semibold mb-3">Pháp lý</h4>
+          <ul className="text-gray-400 text-sm space-y-2">
+            <li className="text-white">Điều khoản sử dụng</li>
+            <li>Chính sách bảo mật</li>
+            <li>Giấy phép</li>
+          </ul>
         </div>
       </div>
 
-      {/* Dòng bản quyền */}
-      <div className="mt-10 border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
-        © 2025 Vietnam Explore.
+      <div className="border-t border-gray-700 mt-12 pt-6 text-sm text-gray-400 text-center">
+        © 2024 Công ty của bạn. Bản quyền đã được bảo hộ.
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
