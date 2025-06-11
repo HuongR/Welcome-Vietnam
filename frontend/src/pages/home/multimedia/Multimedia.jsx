@@ -14,6 +14,7 @@ import {
   FaRegSmile,
 } from "react-icons/fa";
 import { BsMessenger, BsInstagram, BsLink45Deg } from "react-icons/bs";
+import ReturnHome from "../../../components/ui/ReturnHome";
 
 // --- Utility Functions ---
 const getTimeAgo = (date) => {
@@ -538,6 +539,7 @@ const Multimedia = () => {
   return (
     <div className="min-h-screen flex flex-col bg-[#f0f2f5] font-sans">
       <Header />
+      <ReturnHome />
       <div className="h-20 md:h-24"></div>
       <main className="flex-1 w-full max-w-[600px] mx-auto py-4">
         {/* Đăng bài mới */}

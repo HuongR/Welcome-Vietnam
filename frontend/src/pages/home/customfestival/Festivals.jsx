@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import festivalsData from "./festivalData.mjs";
 import Header from "../../../components/layout/Header";
+import ReturnHome from "../../../components/ui/ReturnHome";
 
 const Festivals = () => {
   const [selectedRegion, setSelectedRegion] = useState("all");
@@ -90,6 +91,7 @@ const Festivals = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-red-50 via-orange-50 to-yellow-50">
       <Header />
+      <ReturnHome />
 
       {/* Hero Section with Auto Slideshow */}
       <div className="relative h-[90vh] overflow-hidden bg-gray-900 mt-20">

@@ -7,10 +7,12 @@ import FoodCulture from "../foodculture/FoodCulture";
 import Customs from "../customfestival/CustomFestival";
 import Footer from "../../../components/layout/Footer";
 import VietnamMap from "./VietnamMap";
+import ReturnHome from "../../../components/ui/ReturnHome";
 
 function Home() {
   return (
     <div className="w-full">
+      <ReturnHome />
       {/* Section Video Intro */}
       <section className="relative w-full overflow-hidden">
         <VideoBackground />

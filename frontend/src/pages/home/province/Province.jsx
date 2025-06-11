@@ -3,6 +3,7 @@ import { FaSearch } from "react-icons/fa";
 import provinceData from "./provinceInfo.mjs";
 import Header from "../../../components/layout/Header";
 import videoBg from "../../../assets/videos/province-intro.mp4";
+import ReturnHome from "../../../components/ui/ReturnHome";
 
 export default function Province() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -44,7 +45,7 @@ export default function Province() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-
+      <ReturnHome />
       {/* Banner Section */}
       <div className="relative h-[500px] w-full mt-20 overflow-hidden">
         <video

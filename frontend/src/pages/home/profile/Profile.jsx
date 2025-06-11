@@ -4,6 +4,7 @@ import Post from "./Post";
 import Information from "./Information";
 import Images from "./Images";
 import Video from "./Video";
+import ReturnHome from "../../../components/ui/ReturnHome";
 
 export default function Profile() {
   const [tab, setTab] = useState("posts");
@@ -110,7 +111,7 @@ export default function Profile() {
       style={{ paddingTop: HEADER_HEIGHT - 30 }}
     >
       <Header />
-      {/* Cover */}
+      <ReturnHome />
       <div
         className="relative rounded-b-xl overflow-hidden shadow"
         style={{

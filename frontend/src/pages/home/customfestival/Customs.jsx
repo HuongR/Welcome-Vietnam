@@ -3,6 +3,7 @@ import customsData from "./customData.mjs";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaSearch, FaMapMarkerAlt, FaCalendarAlt, FaInfoCircle } from "react-icons/fa";
 import Header from "../../../components/layout/Header";
+import ReturnHome from "../../../components/ui/ReturnHome";
 
 const Customs = () => {
   const [selectedRegion, setSelectedRegion] = useState("all");
@@ -64,6 +65,7 @@ const Customs = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-red-50 to-white">
       <Header />
+      <ReturnHome />
       <div className="max-w-7xl mx-auto px-4 py-16 mt-20">
         {/* Enhanced Header Section */}
         <motion.div 
