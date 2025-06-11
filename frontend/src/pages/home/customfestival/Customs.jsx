@@ -57,6 +57,10 @@ const Customs = () => {
     return matchesRegion && matchesSearch;
   });
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-red-50 to-white">
       <Header />

@@ -28,7 +28,9 @@ export default function Province() {
       selectedRegion === "all" || province?.region === selectedRegion;
     return matchesSearch && matchesRegion;
   });
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   // Set Hanoi as default province on mount with null check
   useEffect(() => {
     if (provinceInfo?.length) {

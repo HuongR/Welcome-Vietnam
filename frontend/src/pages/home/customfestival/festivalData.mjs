@@ -123,7 +123,7 @@ const festivalData = [
     - Thưởng ngoạn cảnh đẹp thiên nhiên`,
     image: "/images/festivals/chuahuong.jpg",
     region: "north",
-    date: "Từ mùng 6 tháng Giêng đến tháng 3 âm lịch"
+    date: "Từ 6 tháng Giêng - tháng 3 âm lịch"
   }
 ];
 
