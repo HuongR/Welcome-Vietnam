@@ -1,0 +1,80 @@
+.searchbox-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.searchbox-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-width: 750px;
+  height: 60px;
+  padding: 1rem;
+  background-color: #ffffff; /* Màu nền trắng */
+  border-radius: 9999px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tạo độ nổi */
+}
+
+.main-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: rgb(43, 43, 43);
+  margin-right: 0.5rem;
+}
+
+.animated-input {
+  
+  flex-grow: 1;
+  border: none;
+  background: transparent;
+  color: black;
+  font-style: italic;
+  font-size: 1rem;
+  outline: none;
+  padding-left: 0.5rem;
+}
+
+.search-icon {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  color: black;
+  cursor: pointer;
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 65%;
+  margin-bottom: 15px;
+  height: 2px;
+  background-color: black;
+  width: 55%;
+  transform: translateX(-50%);
+}
+
+.animated-input::placeholder {
+  color: #9ca3af; /* Màu placeholder xám nhạt */
+}
+
+/* Giữ hiệu ứng chữ chạy */
+@keyframes slideText {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+}
